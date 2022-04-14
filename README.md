@@ -1,6 +1,6 @@
 # projeto1mod3-Fullstack-Blue
 
-To Do List - #01 Entrega 
+To Do List - El Geladon - #01 Entrega 
 Backend CRUD memória + Front Vanilla (Read All e Read By Id)
 Critérios de Avaliação
 
