@@ -89,11 +89,11 @@ function fecharModal() {
 }
 
 async function createPaleta() {
-  const id = document.querySelector("id").value;
-  const sabor = document.querySelector("sabor").value;
-  const preco = document.querySelector("preco").value;
-  const descricao = document.querySelector("descricao").value;
-  const foto = document.querySelector("foto").value;
+  const id = document.querySelector("#id").value;
+  const sabor = document.querySelector("#sabor").value;
+  const preco = document.querySelector("#preco").value;
+  const descricao = document.querySelector("#descricao").value;
+  const foto = document.querySelector("#foto").value;
 
   const paleta = {
     id,
