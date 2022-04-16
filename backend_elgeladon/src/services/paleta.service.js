@@ -37,7 +37,7 @@ const findAllPaletasService = () => {
   return paletas;
 };
 const findByIdPaletasService = (idParam) => {
-  return paletas = paletas.find((paleta) => paleta.id === idParam);
+  return (paleta = paletas.find((paleta) => paleta.id === idParam));
 };
 
 const createPaletaService = (newPaleta) => {

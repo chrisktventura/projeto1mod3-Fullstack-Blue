@@ -89,11 +89,11 @@ function fecharModal() {
 }
 
 async function createPaleta() {
-  const id = document.querySelector("#id").value;
-  const sabor = document.querySelector("#sabor").value;
-  const preco = document.querySelector("#preco").value;
-  const descricao = document.querySelector("#descricao").value;
-  const foto = document.querySelector("#foto").value;
+  const id = document.querySelector("id").value;
+  const sabor = document.querySelector("sabor").value;
+  const preco = document.querySelector("preco").value;
+  const descricao = document.querySelector("descricao").value;
+  const foto = document.querySelector("foto").value;
 
   const paleta = {
     id,
@@ -145,11 +145,11 @@ async function createPaleta() {
 function abrirModalDelete(id) {
   document.querySelector("#overlay-delete").style.display = "flex";
 
-  const btnSim = document.querySelector(".btn_delete_yes")
+  const btnSim = document.querySelector(".btn_delete_yes");
 
-  btnSim.addEventListener("click", function() {
+  btnSim.addEventListener("click", function () {
     deletePaleta(id);
-  })
+  });
 }
 
 function fecharModalDelete() {
@@ -168,7 +168,7 @@ async function deletePaleta(id) {
   const result = await response.json();
   alert(result.message);
 
-  document.getElementById("paletaList").innerHTML = ""
+  document.getElementById("paletaList").innerHTML = "";
 
   fecharModalDelete();
   findAllPaletas();
